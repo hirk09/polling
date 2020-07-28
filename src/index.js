@@ -6,11 +6,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 ReactDOM.render(
-  <Provider>
+  <Provider store={Store}>
     <App />
-  </Provider>,
+  </Provider>
+  ,
   document.getElementById('root')
 );
 
