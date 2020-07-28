@@ -1,16 +1,15 @@
-import React from 'react';
-import Register from './components/Register/Register';
-// import Login from './components/Login/Login';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-     <Register />
-     {/* <Login /> */}
+const App = (props) => (
+  <div className="App">
+    <div className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <h2>Welcome to poll App</h2>
     </div>
-  );
-}
+    <section className="App-body">{props.children}</section>
+  </div>
+);
 
 export default App;
